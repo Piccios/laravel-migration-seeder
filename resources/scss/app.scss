@@ -1,16 +1,29 @@
-@import "~bootstrap/scss/bootstrap";
-
+// @import "~bootstrap/scss/bootstrap";
+body{
+    background-color: rgba(93, 206, 149, 0.404);
+}
 section.infos{
     justify-content: center;
     align-items: center;
-    background-color: rgba(93, 206, 149, 0.404);
 
+        .main-container{
+            display: flex;
+
+        }
         div.card{
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             margin: 2rem auto;
-            width: 500px;
             padding: 1rem;
             box-shadow: 3px 3px 10px rgba(5, 141, 23, 0.726);
+            width: calc((100% / 5) - 6rem);
+
+            h3{
+                font-size: large;
+                font-weight: 800;
+                text-decoration: underline;
+            }
         }
 }
 
