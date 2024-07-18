@@ -14,7 +14,9 @@
             <h3>Orario di arrivo:</h3><p>{{$train->orario_di_arrivo}}</p>
             <h3>Codice:</h3><p>{{$train->codice_treno}}</p>
             <h3>Numero Carrozze</h3><p>{{$train->numero_carrozze}}</p>
-            <p>{{ $train->in_orario ? 'in orario' : 'in ritardo' }}</p>        </div>
+            <p>{{ $train->in_orario ? 'in orario' : 'in ritardo' }}</p>
+            <p>{{ $train->cancellato ? 'cancellato' : 'in corso' }}</p>
+        </div>
 
     @endforeach
 </section>
