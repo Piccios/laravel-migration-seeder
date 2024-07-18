@@ -2,11 +2,11 @@
 
 @section('page-title', 'Treni')
 @section('main-content')
-
+<section class="infos">
 <h1>I treni di oggi:</h1>
-<section>
+
     @foreach ($trains as $train)
-        <div>
+        <div class="card">
             <h2>{{$train->azienda}}</h2>
             <h3>Stazione di partenza:</h3><p>{{$train->stazione_di_partenza}}</p>
             <h3>Stazione di arrivo:</h3><p>{{$train->stazione_di_arrivo}}</p>
