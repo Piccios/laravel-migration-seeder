@@ -2,8 +2,8 @@
 
 @section('page-title', 'Treni')
 @section('main-content')
-<section class="infos">
     <h1>I treni di oggi:</h1>
+<section class="infos">
     <div class="main-container">
     @foreach ($trains as $train)
         <div class="card">

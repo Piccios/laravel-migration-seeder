@@ -4,12 +4,14 @@ body{
     font-family: "Montserrat", sans-serif;;
 }
 section.infos{
+    display: flex;
     justify-content: center;
     align-items: center;
 
         .main-container{
             display: flex;
-
+            flex-wrap: wrap;
+            justify-content: center;
         }
         div.card{
             display: flex;
